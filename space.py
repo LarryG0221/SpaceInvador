@@ -11,21 +11,18 @@ screen = pygame.display.set_mode((WIDTH, WIDTH))
 pygame.display.set_caption("Space Invader")
 
 # Load background image
-# Make sure you have 'space.png' in the same folder
-background = pygame.image.load("bg.jpg")
+# background = pygame.Surface(screen.get_size())
+background = pygame.image.load("bg.png")
 
 # Game loop
-playing = True
-while playing:
-    for event in pygame.event.get():
-        if event.type == pygame.QUIT:
-            playing = False
 
+while True:
     # Draw background
     screen.blit(background, (0, 0))
-
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            sys.exit()
+            
     # Update display
     pygame.display.update()
 
-pygame.quit()
-sys.exit()
