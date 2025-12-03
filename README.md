@@ -1,1 +1,1 @@
-# SpaceInvador is a mini game which belongs to this game console.
+# SpaceInvader is a mini game which belongs to this game console.
